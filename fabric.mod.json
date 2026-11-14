@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "sneaklock",
+  "version": "${version}",
+  "name": "SneakLock",
+  "description": "Press sneak once to keep crouching, even while typing, until you press J.",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.example.sneaklock.SneakLockClient"]
+  },
+  "mixins": ["sneaklock.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
